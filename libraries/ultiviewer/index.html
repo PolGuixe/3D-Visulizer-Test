@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+      <script src="components/platform/platform.js"></script>
+      <link rel="import" href="components/polymer/polymer.html">
+      <link href="css/usco-ultiviewer-demo.css" rel="stylesheet">
+      <link rel="import" href="usco-ultiviewer/usco-ultiviewer.html">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+  </head>
+<body>
+  <usco-ultiviewer orientation="diagonal" showShadows ></usco-ultiviewer>
+  <script>
+    window.addEventListener('polymer-ready', function() {
+      console.log("polymer components ready");
+      //document.body.style.opacity = 1; // show body now that registration is done.
+	    var ultiViewer = document.querySelector('usco-ultiviewer');
+      //workaround for node-webkit 0.6.3      
+      ultiViewer.style.opacity = 1;
+      //ultiViewer.className = ultiViewer.className.replace( /(?:^|\s)unresolved(?!\S)/ , '' )
+
+      var currentUrl = window.location.origin;
+
+      //pseudo tests: TODO: find a way to do actual unit tests
+      //ultiViewer.loadResource(currentUrl+"/demo-data/design.dae");
+      console.log("ultiViewer", ultiViewer);
+      //ultiViewer.loadResource(currentUrl+"/demo-data/hand.ctm");
+  
+      ultiViewer.autoRotate = true;
+      ultiViewer.controls.autoRotateSpeed = 2.0;
+
+      //stl files
+      //ultiViewer.loadResource(currentUrl+"/demo-data/pr2_head_tilt.stl");
+      //ultiViewer.loadResource(currentUrl+"/demo-data/femur.stl");
+      //ultiViewer.loadResource(currentUrl+"/demo-data/pr2_head_pan.stl");
+
+      //setTimeout(function(){ultiViewer.loadResource(currentUrl+"/demo-data/femur.stl");},1000 )
+
+      //setTimeout(function(){ultiViewer.loadResource(currentUrl+"/demo-data/UM2CableChain_BedEnd.STL");},1000 )
+
+      setTimeout(function(){ultiViewer.loadResource("https://s3-eu-west-1.amazonaws.com/files.youmagine.com/uploads/document/file/1078/Extruder_Big_Gear_V1.stl");},1000 )
+
+      //ultiViewer.loadResource(currentUrl+"/demo-data/UM2CableChain_BedEnd.STL");
+      
+      //ultiViewer.loadResource(currentUrl+"/demo-data/UM2CableChain_ChainSegment.STL");
+      //ultiViewer.loadResource("https://s3-eu-west-1.amazonaws.com/files.youmagine.com/uploads/document/file/1609/10mm_Shaft_bearing_mount__lower__A_v3.stl");
+      //ultiViewer.loadResource("https://s3-eu-west-1.amazonaws.com/files.youmagine.com/uploads/document/file/1078/Extruder_Big_Gear_V1.stl");
+
+
+      //obj files
+      //ultiViewer.loadResource(currentUrl+"/demo-data/box.obj");
+      //ultiViewer.loadResource(currentUrl+"/demo-data/extincteur_obj.obj", false, false, true);
+      //ultiViewer.loadResource(currentUrl+"/demo-data/toyplane.obj");
+      
+        
+      //ply files
+      //preload ??
+      //ultiViewer.loadResource(currentUrl+"/demo-data/dolphins.ply",true,true,false);
+      setTimeout(function(){
+
+          //ultiViewer.loadResource(currentUrl+"/demo-data/dolphins.ply",true,true,true);
+      },8000);
+      //ultiViewer.loadResource(currentUrl+"/demo-data/dolphins.ply",true,true,true);
+      //ultiViewer.loadResource(currentUrl+"/demo-data/airplane.ply");
+
+      //amf files
+      //ultiViewer.loadResource(currentUrl+"/demo-data/Constellation.amf")
+      //ultiViewer.loadResource(currentUrl+"/demo-data/FaceColors.amf")      
+      //ultiViewer.loadResource(currentUrl+"/demo-data/Rook.amf")
+      //ultiViewer.loadResource(currentUrl+"/demo-data/stapel_dual.amf")
+      //ultiViewer.loadResource(currentUrl+"/demo-data/RoboIce-dual.amf")
+      //ultiViewer.loadResource("https://s3-eu-west-1.amazonaws.com/files.youmagine.com/uploads/document/file/393/RoboIce-dual.amf");
+      
+      //ultiViewer.loadResource("https://s3-eu-west-1.amazonaws.com/files.youmagine.com/uploads/document/file/670/hackaday.amf")
+      
+
+    });
+  </script>  
+</body>
+</html>
