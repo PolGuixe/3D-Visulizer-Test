@@ -818,7 +818,7 @@ function log(msg) {
 Good when web workers aren't supported in the browser, but it's still fast enough, so execution doesn't hang too badly (e.g. Opera 10.5).
 By Stefan Wehrmeyer, licensed under MIT
 */
-
+/*
 var WorkerFacade;
 if(!!window.Worker){
     WorkerFacade = (function(){

@@ -48,12 +48,12 @@ float:left;
 .viewer{
 	width:auto;
 	height:90%;	
+	/*background-color:#F58585;*/
 }
 
-.thingView {
+.thingView, .jsc3d, .three {
 width:auto;
 height:auto;
-background-color:#F8F4CA;
 }
 
 #viewer1{
@@ -62,4 +62,16 @@ background-color:#F8F4CA;
 	margin-left:auto;
 	margin-right:auto;
 	padding-bottom:20px;
+}
+
+.canvas{
+width:640px;
+height:480px;
+margin-left:auto;
+margin-right:auto;
+}
+
+canvas {
+	width:100%;
+	height:100%;
 }
