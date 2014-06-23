@@ -1,0 +1,20 @@
+{
+  "name": "node-stl",
+  "version": "0.0.1",
+  "description": "parse stl files with Node.js and get volume, and weight",
+  "author": {
+    "name": "Johannes Boyne",
+    "email": "johannes@boyne.de",
+    "url": "http://boyne-developing.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johannesboyne/node-stl.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "dependencies": {
+  }
+}

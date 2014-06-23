@@ -1,0 +1,18 @@
+html {
+  font-family: "Hiragana Kaku Gothic Pro", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    width: 500px;
+    margin: 0 auto;
+}
+
+canvas {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #AAA;
+}
+
+#caption {
+    text-align: center;
+}
