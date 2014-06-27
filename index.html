@@ -6,41 +6,16 @@
 	
     <link rel="stylesheet" type="text/css" href="css/3dViewerTest.css"/>
     
-   <script src="javascripts/Three.js"></script>
-    <script src="javascripts/plane.js"></script>
-    <script src="javascripts/thingiview.js"></script>
-    <script src="javascripts/jsc3d.js"></script>
-    <script src="javascripts/jsc3d.touch.js"></script>
-    <script src="javascripts/jsc3d.webgl.js"></script>
+    <script src="js/Three.js"></script>
+    <script src="js/plane.js"></script>
+    <script src="js/thingiview.js"></script>
+    <script src="js/jsc3d.js"></script>
+    <script src="js/jsc3d.touch.js"></script>
+    <script src="js/jsc3d.webgl.js"></script> 
+    <script src="js/script.js"></script>
     
-	<script>
-      window.onload = function() {
-		  var canvas = document.getElementById('jsc3d');
-		  var viewer = new JSC3D.Viewer(canvas);
-		  viewer.setParameter('SceneUrl', 'objects/test print 2.stl');
-		  viewer.setParameter('InitRotationX', 45);
-		  viewer.setParameter('InitRotationY', 45);
-		  viewer.setParameter('InitRotationZ', 45);
-		  viewer.setParameter('ModelColor', '#CAA618');
-		  viewer.setParameter('Background', 'off');
-		  viewer.setParameter('RenderMode', 'texturesflat');
-		  viewer.setParameter('MipMapping', 'on');
-		  viewer.setParameter('Renderer', 'webgl');
-		  viewer.init();
-		  viewer.update();
-		  
-		 thingiurlbase = "/javascripts";
-        thingiview = new Thingiview("viewer1");
-        thingiview.setObjectColor('#EE3F42');
-        thingiview.initScene();
-        thingiview.loadSTL("/objects/cube.stl");
-	    thingiview.setShowPlane(true);	
-      }
-	  
-    </script>
-    
-  
 </head>
+
 <body>
 	<header id="header">
    	  <div id="logo"> <img src="images/Zetoff-logo-4.png" alt="ZETOFF" /> </div>
