@@ -6,12 +6,18 @@
 	
     <link rel="stylesheet" type="text/css" href="css/3dViewerTest.css"/>
     
-    <script src="js/Three.js"></script>
-    <script src="js/plane.js"></script>
-    <script src="js/thingiview.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/detector.js"></script>
+    <script src="js/STLLoader.min.js"></script>
+    <script src="js/TrackballControls.js"></script>
+    
     <script src="js/jsc3d.js"></script>
     <script src="js/jsc3d.touch.js"></script>
-    <script src="js/jsc3d.webgl.js"></script> 
+    <script src="js/jsc3d.webgl.js"></script>
+    
+    <script src="js/plane.js"></script>
+    <script src="js/thingiview.js"></script>
+    
     <script src="js/script.js"></script>
     
 </head>
@@ -20,6 +26,17 @@
 	<header id="header">
    	  <div id="logo"> <img src="images/Zetoff-logo-4.png" alt="ZETOFF" /> </div>
     </header>
+    
+    <div class="viewer">
+    	<div class="three">
+        	<h1>three.js</h1>
+            <div class="canvas">
+                <canvas id="three" width=1280 height=960>
+        		  It seems you are using an outdated browser that does not support canvas :-(
+                </canvas>
+            </div>
+       </div>
+    </div>
     
     <div class="viewer">
     	<div class="jsc3d">
@@ -32,14 +49,8 @@
         </div>
     </div>
     
-    <div class="viewer">
-    	<div class="three">
-        	<h1>three.js</h1>
-            <canvas id="three" width=1280 height=960>
-        		It seems you are using an outdated browser that does not support canvas :-(
-        		</canvas>
-       </div>
-    </div>
+    
+    <iframe src="https://clara.io/embed/5edbb444-50fb-4e01-a5f1-d1084ba558f2?renderer=webgl&clickToEnable=false&hideHeader=false&timeline=true&controlBar=true&autoplay=false" width="555" height="500"></iframe>
     
     
     <div class="viewer">
